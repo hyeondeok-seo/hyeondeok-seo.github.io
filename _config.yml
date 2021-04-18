@@ -211,6 +211,7 @@ defaults:
       type: posts
     values:
       layout: article
+      comments: true
       sharing: true
       license: true
       aside:

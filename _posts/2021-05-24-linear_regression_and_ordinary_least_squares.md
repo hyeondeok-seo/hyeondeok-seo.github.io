@@ -27,7 +27,7 @@ MLE 관점에서 오차 값($\mathbf{\epsilon}$)을 gaussian 분포로 가정한
 ## 4. OLS 의 계산
 - 대수적으로 pseudoinverse 를 통해 다음과 같이 계산할 수 있다. 하지만, 이는 closed form solution 이 아니다. 왜냐면 $\mathbf{X}^{T}\mathbf{X}$ 가 sinular matrix 일 수 있기 때문이며, 이 경우 해당 방정식은 여러 해를 가질 수 있다.
 
-$$\mathbf{w} = {\mathbf{X}^{T} \mathbf{X}}^{-1} \mathbf{X}^{T}\mathbf{y}$$
+$$\mathbf{w} = {(\mathbf{X}^{T} \mathbf{X})}^{-1} \mathbf{X}^{T}\mathbf{y}$$
 
 - 해석학적 솔루션으로, 오차 제곱 항의 그래디언트가 0 을 만족하는 $\mathbf{w}$ 를 계산할 수 있다. 이 경우 대수적으로 구한 결과와 동일한 결과를 얻을 수 있다.
 - numerical solution 으로, Gradient Descent. 
